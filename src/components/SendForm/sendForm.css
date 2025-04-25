@@ -1,0 +1,52 @@
+h2 {
+  color: #bac2de;
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  font-weight: 400;
+  margin: 0 0 8px 0;
+}
+
+.input-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Обёртка инпута без bootstrap input-group */
+.custom-input-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  background-color: #313244;
+  border-radius: 12px;
+  border: 1.5px solid #45475a;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  min-width: 260px;
+}
+
+/* Сам инпут */
+.custom-input-wrapper input[type="text"] {
+  flex-grow: 1;
+  padding: 14px 15px;
+  border: none;
+  background: transparent;
+  color: #cdd6f4;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Кнопка */
+#fetchButton {
+  background-color: #c4a7e7;
+  color: #191724;
+  border: none;
+  padding: 14px 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 12px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}

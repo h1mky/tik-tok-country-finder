@@ -6,11 +6,9 @@ import "normalize.css";
 
 const App = () => {
   return (
-    <div className="0 d-flex justify-content-center align-items-center vh-100">
-      <div className="container shadow rounded">
-        <SendForm />
-        <DataList />
-      </div>
+    <div className="container shadow-lg rounded-4 p-4 m-auto">
+      <SendForm />
+      <DataList />
     </div>
   );
 };

@@ -1,6 +1,16 @@
 body {
   background-color: #1e1e2e;
+  color: #cdd6f4;
+  font-family: "inter", sans-serif;
 }
 .container {
   background-color: #181825;
+  min-width: 650px;
+  max-width: 650px;
+}
+h1 {
+  color: #c4a7e7;
+  font-size: clamp(1.8rem, 5vw, 2.2rem);
+  font-weight: 700;
+  margin: 0;
 }

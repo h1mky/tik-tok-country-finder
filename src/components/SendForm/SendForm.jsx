@@ -1,16 +1,25 @@
+import "../SendForm/SendForm.css";
+
 const SendForm = () => {
   return (
     <>
-      <h1>TikTok User Finder</h1>
-      <h2>Explore TikTok User Stats & Regions Instantly</h2>
-      <section className="input-area d-flex align-items-center flex-wrap gap-2 mb-3 ">
-        <div className="input-group d-flex align-items-center rounded">
+      <header className="d-flex align-items-center justify-content-center mb-3 text-center">
+        <h1>TikTok User Finder</h1>
+      </header>
+
+      <section className="mb-4 text-center">
+        <h2>Explore TikTok User Stats & Region Instantly</h2>
+      </section>
+
+      <section className="input-area d-flex align-items-center flex-wrap gap-2 mb-3">
+        {/* .input-group больше не нужен — заменён кастомным стилем */}
+        <div className="custom-input-wrapper">
           <input
-            className="rounded"
+            type="text"
             placeholder="Enter TikTok username (e.g., tiktok)"
-          ></input>
+          />
         </div>
-        <button className="rounded border border-1 ">Fetch Data</button>
+        <button id="fetchButton">Fetch Data</button>
       </section>
     </>
   );
