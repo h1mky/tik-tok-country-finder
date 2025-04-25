@@ -89,3 +89,9 @@
   object-fit: cover;
   display: block;
 }
+
+.initial-message {
+  min-height: 70px;
+  font-size: 1rem;
+  color: #bac2de;
+}

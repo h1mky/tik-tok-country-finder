@@ -14,3 +14,17 @@ h1 {
   font-weight: 700;
   margin: 0;
 }
+#themeToggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-color: #313244;
+  color: var(--text-secondary);
+  border: 1px solid #45475a;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  z-index: 100;
+}

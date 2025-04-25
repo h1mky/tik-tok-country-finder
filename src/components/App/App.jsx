@@ -6,10 +6,15 @@ import "normalize.css";
 
 const App = () => {
   return (
-    <div className="container shadow-lg rounded-4 p-4 m-auto">
-      <SendForm />
-      <DataList />
-    </div>
+    <>
+      <button id="themeToggle">
+        <i className="fa-solid fa-sun"></i>
+      </button>
+      <div className="container shadow-lg rounded-4 p-4 m-auto">
+        <SendForm />
+        <DataList />
+      </div>
+    </>
   );
 };
 export default App;
