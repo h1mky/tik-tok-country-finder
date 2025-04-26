@@ -128,15 +128,21 @@ const DataList = () => {
               <h4>Details</h4>
               <hr />
               <p className="my-2 d-flex align-items-center gap-2">
-                {userData.profile.Language || "No language"}
+                <i className="fa-solid fa-language"></i>
+                Language: {userData.profile.Language || "No language"}
               </p>
               <p className="my-2 d-flex align-items-center gap-2">
-                {userData.profile["User ID"] || "No user ID"}
+                <i className="fa-solid fa-fingerprint"></i>
+                User ID: {userData.profile["User ID"] || "No user ID"}
               </p>
               <p className="my-2 d-flex align-items-center gap-2">
+                <i className="fa-solid fa-calendar-day"></i>
+                Created:{" "}
                 {userData.profile["Account Created"] || "No creation date"}
               </p>
               <p className="my-2 d-flex align-items-center gap-2">
+                <i className="fa-solid fa-calendar-check"></i>
+                Nickname Mod:{" "}
                 {userData.profile["Nickname Last Modified"] ||
                   "No modification date"}
               </p>
