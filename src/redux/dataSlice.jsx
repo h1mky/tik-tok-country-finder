@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { useHttp } from "../hooks/http.hook";
+import { request } from "../hooks/http.hook";
 
 const initialState = {
   user: null,
@@ -8,10 +8,7 @@ const initialState = {
 };
 
 export const fetchData = createAsyncThunk("data/fetchData", async (name) => {
-  const request = useHttp();
-  return await request(
-    `https://jaefu3p97g.execute-api.us-east-1.amazonaws.com/default/smttab?username=${name}`
-  );
+  return await request(`/api/default/smttab?username=${name}`);
 });
 
 const dataSlice = createSlice({
@@ -36,7 +33,6 @@ const dataSlice = createSlice({
       });
   },
 });
-export const { setUsername } = dataSlice.actions;
 
-const { reducer } = dataSlice;
-export default reducer;
+export const { setUsername } = dataSlice.actions;
+export default dataSlice.reducer;

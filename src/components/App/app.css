@@ -20,7 +20,7 @@ h1 {
   right: 15px;
   background-color: #313244;
   color: var(--text-secondary);
-  border: 1px solid #45475a;
+  border: 1px solid var(--border-color);
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
