@@ -98,3 +98,6 @@
 .error-message {
   color: #eb6f92;
 }
+button:hover {
+  transform: translateY(-1px);
+}

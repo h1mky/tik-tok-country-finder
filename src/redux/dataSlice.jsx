@@ -27,6 +27,7 @@ const dataSlice = createSlice({
       .addCase(fetchData.fulfilled, (state, action) => {
         state.dataLoadingStatus = "idle";
         state.user = action.payload;
+        state.username = "";
       })
       .addCase(fetchData.rejected, (state) => {
         state.dataLoadingStatus = "error";

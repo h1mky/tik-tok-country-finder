@@ -15,6 +15,17 @@ const SendForm = () => {
     }
   }, [userData]);
 
+  const handlePaste = () => {
+    navigator.clipboard
+      .readText()
+      .then((text) => {
+        dispatch(setUsername(text));
+      })
+      .catch((err) => {
+        console.error("Failed to read clipboard: ", err);
+      });
+  };
+
   const handleChange = (e) => {
     dispatch(setUsername(e.target.value));
   };
@@ -39,7 +50,14 @@ const SendForm = () => {
             type="text"
             placeholder="Enter TikTok username (e.g., tiktok)"
             onChange={handleChange}
+            value={username}
           />
+          <button
+            className="paste-button d-flex align-self-stretch align-items-center fs-6"
+            onClick={handlePaste}
+          >
+            <i className="fa-solid fa-paste"></i>
+          </button>
         </div>
         <button id="fetchButton" onClick={handleFetch}>
           Fetch Data

@@ -50,3 +50,20 @@ h2 {
   flex-shrink: 0;
   white-space: nowrap;
 }
+#fetchButton:hover {
+  background-color: #f9e2af;
+}
+
+.paste-button {
+  background-color: transparent;
+  color: #a6adc8;
+  border: none;
+  border-left-width: medium;
+  border-left-style: none;
+  border-left-color: currentcolor;
+  border-left: 1.5px solid #45475a;
+  padding: 0 15px;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
