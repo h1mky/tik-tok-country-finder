@@ -1,12 +1,15 @@
-# React + Vite
+TikTok OSINT (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The TikTok OSINT Frontend project is designed for visualizing and interacting with publicly available data from the TikTok platform using open APIs. This tool allows users to explore public user profiles, videos, trends, and interactions in a user-friendly interface.
+Description
 
-Currently, two official plugins are available:
+The TikTok OSINT frontend leverages open APIs to display publicly accessible data from TikTok. The project aims to provide a simple and intuitive UI for investigating user activity, popular trends, video content, and other interactions on the platform.
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    User Profile Exploration: View public user profiles, their videos, followers, and other publicly available data.
 
-## Expanding the ESLint configuration
+    Trend Analysis: Display trending hashtags, videos, and content that are currently popular on TikTok.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    Video Details: Visualize information on individual videos, including likes, comments, and shares.
+
+    Interactivity: Interactive UI that allows users to search for specific users or videos, and filter content based on different criteria.
